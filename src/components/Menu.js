@@ -22,31 +22,35 @@ class Menu extends Component {
     }
     render() {
         return (
-            <nav className="navbar navbar-expand-sm bg-light fixed-top">
-                <a className="navbar-brand" href="#">React Redux Boilerplate</a>
-                <NavbarToggler onClick={this.toggle} >
-                    <MenuIcon size={16} />
-                </NavbarToggler>
-                <Collapse isOpen={this.state.isOpen} navbar>
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink exact activeClassName="active" className="nav-link" to="/">
-                                <div>Home</div>
-                            </NavLink >
-                        </li>
-                        <li className="nav-item">
-                            <NavLink activeClassName="active" className="nav-link" to="/page">
-                                <div>SubPage</div>
-                            </NavLink >
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                <div>Login</div>
-                            </a>
-                        </li>
-                    </ul>
-                </Collapse>
-            </nav>
+            <div>
+                <nav className="navbar navbar-expand-sm bg-light fixed-top">
+                    <a className="navbar-brand" href="#">React Redux Boilerplate</a>
+                    <NavbarToggler onClick={this.toggle} >
+                        <MenuIcon size={16} />
+                    </NavbarToggler>
+                    <Collapse isOpen={this.state.isOpen} navbar>
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <NavLink exact activeClassName="active" className="nav-link" to="/">
+                                    <div>Home</div>
+                                </NavLink >
+                            </li>
+                            <li className="nav-item">
+                                <NavLink activeClassName="active" className="nav-link" to="/page">
+                                    <div>SubPage</div>
+                                </NavLink >
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    <div>Login</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </Collapse>
+                </nav>
+
+                <LoadingBar style={{ backgroundColor: '#ffaf42' }} />
+            </div>
         );
     }
 }

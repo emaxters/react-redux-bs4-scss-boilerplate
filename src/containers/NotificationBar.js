@@ -17,7 +17,7 @@ class NotificationBar extends Component {
     renderNotification() {
         const { type, message } = this.props.notifications;
         return (
-            <div className="py-1">
+            <div className="py-3">
                 <div className={`mb-0 alert alert-${type}`} >{message} </div>
             </div>
         );

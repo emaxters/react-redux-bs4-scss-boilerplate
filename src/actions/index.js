@@ -8,7 +8,7 @@ export const loadInitData = scope => (dispatch) => {
   const url = 'https://jsonplaceholder.typicode.com/posts/1';
   dispatch(showLoading(scope));
   axios.get(url).then(({ data }) => {
-    dispatch(hideLoading(scope));
+    //dispatch(hideLoading(scope));
     dispatch({
       type: SHOW_NOTIFICATION,
       payload: { type: "success", message: "Data loaded successfully" }

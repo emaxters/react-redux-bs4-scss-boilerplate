@@ -35,7 +35,7 @@ store.subscribe(() => {
 
 ReactDOM.render(<Provider store={store}>
     <Router>
-        <div className="container-fluid">
+        <div className="container-fluid pt-5">
             <Menu />
             <NotificationBar />
             <Switch>
