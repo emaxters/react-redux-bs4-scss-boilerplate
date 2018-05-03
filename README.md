@@ -1,19 +1,18 @@
-# React Redux SEO - Boilerplate Project
+# React Redux - Boilerplate Project
 
-SEO Friendly React Boilerplate with Redux, with Bootstrap 4 for UI and Social Logins. Most commonly used utility libraries like Moment and Lodash are included. Axios and Redux Promise is used to access REST APIs.
+React Boilerplate with Redux, with Bootstrap 4 for UI with SCSS and Social Logins. Most commonly used utility libraries like Moment and Lodash are included. Axios is used to access REST APIs and Thunk Used as the Middleware.
 
 ## Packaged Componets
 * React JS
 * Redux
 * React Router
 * Redux Form
-* Redux Promise
-* React SEO
-* React Meta tags
 * Axios
 * Lodash
 * Moment
-* React Social Login Modal
+* React Modal
+* SCSS
+* Feather Icons
 
 ## Setting up the Application
 1. Clone the Application from GIT
