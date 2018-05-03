@@ -41,7 +41,7 @@ class LoginForm extends Component {
                     component={this.renderField}
                     type="password"
                 />
-                
+
 
                 <button type="submit" className="btn btn-primary btn-block">Login</button>
             </form>
