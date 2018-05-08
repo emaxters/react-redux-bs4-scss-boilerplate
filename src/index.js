@@ -10,7 +10,7 @@ import './styles/css/main.css';
 
 import reducers from './reducers';
 
-import Menu from './components/Menu';
+import Menu from './containers/Menu';
 import NotificationBar from './containers/NotificationBar';
 import Footer from './components/Footer';
 import LoginModal from './containers/LoginModal';

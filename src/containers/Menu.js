@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
 import { Menu as MenuIcon } from 'react-feather';
 import { NavLink, withRouter } from "react-router-dom";
+import { bindActionCreators } from "redux";
 import { openDialog } from 'redux-reactstrap-modal';
 import LoadingBar from 'react-redux-loading-bar';
 import { Collapse, NavbarToggler } from 'reactstrap';
@@ -41,18 +43,23 @@ class Menu extends Component {
                                 </NavLink >
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <a onClick={() => this.props.openDialog('MODAL_LOGIN', { data: "Some Data" })} className="nav-link" href="#">
                                     <div>Login</div>
                                 </a>
                             </li>
                         </ul>
                     </Collapse>
                 </nav>
-
-                <LoadingBar style={{ backgroundColor: '#ffaf42' }} />
+                <div >
+                    <LoadingBar style={{ backgroundColor: '#ffaf42' }} />
+                </div>
             </div>
         );
     }
 }
 
-export default Menu;
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ openDialog }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(Menu);
