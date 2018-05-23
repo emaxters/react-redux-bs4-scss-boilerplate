@@ -2,6 +2,7 @@
   "name": "redux-react-boilerplate",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://emaxters.github.io/react-redux-bs4-scss-boilerplate",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.0.0",
@@ -36,6 +37,10 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
