@@ -71,4 +71,4 @@ function mapDispatchToProps(dispatch) {
     return bindActionCreators({ login, fbLogin, googleLogin, closeDialog, openDialog }, dispatch);
 }
 
-export default compose(reduxDialog({ name: 'MODAL_LOGIN', centered: true }), connect(null, mapDispatchToProps))(LoginModal);
+export default compose(reduxDialog(connect, { name: 'MODAL_LOGIN', centered: true }), connect(null, mapDispatchToProps))(LoginModal);

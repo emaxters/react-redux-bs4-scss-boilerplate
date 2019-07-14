@@ -12,7 +12,6 @@ const rootReducer = combineReducers({
     form,
     dialogReducer,
     notifications: notificationsReducer
-
 });
 
 export default rootReducer;
